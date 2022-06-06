@@ -1,0 +1,140 @@
+.carousel {
+  .carousel-inner {
+    width: 90%;
+  }
+  .carousel-item {
+    height: 750px;
+    img {
+      position: absolute;
+      // clip: rect(0px, 75%, 200px, 50px);
+    }
+  }
+}
+
+.banner-text {
+  padding: 200px 50px 100px 50px;
+  width: 22%;
+  top: 12%;
+  right: 0px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 1rem rgba(232, 232, 232, 0.5);
+}
+
+.swiper-container {
+  width: 100%;
+  .swiper-slide {
+    width: 450px;
+    // height: 200px;
+    margin-left: 8px;
+    margin-right: 8px;
+    img {
+      // width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: $c-light;
+    background-image: none;
+    z-index: 100;
+    font-size: 36px;
+  }
+  .swiper-button-next.swiper-button-disabled,
+  .swiper-button-prev.swiper-button-disabled {
+    opacity: 0.1;
+  }
+}
+.card {
+  border: transparent;
+  background-color: transparent;
+  color: $c-light;
+  transition: 0.3s;
+  &:hover {
+    text-decoration: none;
+    color: $c-dark;
+  }
+  .card-img-top {
+    border-radius: calc(0.25rem - 1px);
+  }
+}
+
+.theme-goods {
+  color: $c-light;
+  img {
+    width: 90%;
+  }
+  .theme-img-btn {
+    background-image: url(https://img.freepik.com/free-photo/handmade-paper-texture-watercolors-drawings-illustrations-realistic-embossed-white-paper_508524-170.jpg?w=1800);
+    background-position: center;
+    background-size: contain;
+    bottom: 10%;
+    right: 40px;
+    padding: 28px 36px;
+    .btn i {
+      transition: 0.2s;
+    }
+    &:hover {
+      .btn i {
+        transform: translateX(80%);
+      }
+    }
+  }
+}
+
+.about-us {
+  color: $c-light;
+  .our-locations {
+    padding: 0px 120px 0 50px;
+    // border-right: 0.5px solid rgba(255, 239, 224, 0.1);
+  }
+  .us-content {
+    .location-items {
+      display: inline-block;
+    }
+    .card:hover {
+      color: inherit;
+    }
+    .location-items::after {
+      content: "＋";
+      font-size: 24px;
+    }
+  }
+}
+
+.subscribe-our {
+  color: $c-light;
+  .login,
+  .subscribe {
+    .form-control {
+      border-radius: none;
+    }
+    .mail-icon {
+      bottom: 10px;
+      left: 14px;
+      font-size: 24px;
+      opacity: 0.5;
+    }
+    input {
+      background: none;
+      border: none;
+      border-bottom: 1px solid $c-light;
+      font-size: 24px;
+      padding: 10px 10px 10px 50px;
+      // box-shadow: none;
+      color: $c-light;
+      &:focus,
+      &:active {
+        outline: none;
+      }
+    }
+    .submit-btn {
+      font-size: 24px;
+      background: none;
+      color: $c-light;
+      border: none;
+      right: 0px;
+      bottom: 18px;
+    }
+  }
+}
